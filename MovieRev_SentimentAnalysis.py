@@ -3,10 +3,10 @@ import streamlit as st
 import pickle
 
 
-with open("E:/MSU/Classes/CMSE_890/Project/tfidf_vectorizer.sav", 'rb') as f:
+with open("tfidf_vectorizer.sav", 'rb') as f:
     tfidf = pickle.load(f)
 
-with open('E:\MSU\Classes\CMSE_890\Project\svm_model.sav', 'rb') as f:
+with open('svm_model.sav', 'rb') as f:
     svm_model = pickle.load(f)
 
 st.title("Sentiment Analysis of Movie Reviews 📽️🍿")
